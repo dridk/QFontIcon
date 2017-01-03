@@ -1,5 +1,6 @@
 # QFontIcon
-QFonticon is a simple Qt class that allows you to create QIcon from a font file like [font Awesome](http://fontawesome.io/)
+QFonticon is a simple Qt class that allows you to create QIcon from a font file like [font Awesome](http://fontawesome.io/).    
+QFontIcon is under [MIT license](https://opensource.org/licenses/MIT)
 
 ## Usage 
 
