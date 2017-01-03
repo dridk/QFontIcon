@@ -131,7 +131,8 @@ void QFontIconEngine::paint(QPainter *painter, const QRect &rect, QIcon::Mode mo
     painter->save();
     painter->setPen(QPen(penColor));
     painter->setFont(font);
-    painter->drawText(rect,mLetter, Qt::AlignCenter|Qt::AlignVCenter);
+    painter->drawText(rect, Qt::AlignCenter|Qt::AlignVCenter, mLetter);
+
     painter->restore();
 }
 
