@@ -23,3 +23,6 @@ from [font Awesome](http://fontawesome.io/) website under icons menu.
 ## Exemple 
 The following repository contains an exemple based on font awesome. Open QFontIcon.pro in QtCreator and run it. You should see 
 the following results.
+
+![QFontIcon demo](https://raw.githubusercontent.com/dridk/QFontIcon/master/screenshot.png "QFontIcon demo")
+
