@@ -34,6 +34,7 @@ SOFTWARE.
 
 class QFontIcon;
 class QFontIconEngine;
+#define FIcon(code) QFontIcon::icon(code)
 
 class QFontIconEngine : public QIconEngine
 {
