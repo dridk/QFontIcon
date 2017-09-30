@@ -11,10 +11,17 @@ You just have to copy QFontIcon folder into your project. And add the following 
 
        
 You need a font file to use QFontIcon. You can for exemple download [font Awesome](http://fontawesome.io/) and add it in your project
-as a resource file. Then use the class as follow : 
+as a resource file. Then use the class as follow. Load first the font file only one time. In the main.cpp in the most of the case. 
 
         QFontIcon::addFont(":/fontawesome.ttf");
-        QIcon icon = QFontIcon::icon(0xf2b9);
+       
+Then you can get icon from unicode as follow : 
+
+        QAction * action = new QAction(QFontIcon::icon(0xf501));
+        // or using typedef FIcon definition 
+        QAction * action = new QAction(FIcon(0x501));
+
+       
         
 QFontIcon::icon(QChar) takes the unicode of the icon's caracter. You can get unicode name
 from [font Awesome](http://fontawesome.io/) website under icons menu. 
