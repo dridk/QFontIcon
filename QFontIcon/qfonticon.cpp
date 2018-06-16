@@ -29,11 +29,10 @@ QFontIcon * QFontIcon::mInstance = Q_NULLPTR;
 
 bool QFontIcon::addFont(const QString &filename)
 {
-    qDebug()<<"add font";
     int id = QFontDatabase::addApplicationFont(filename);
 
     if (id == -1){
-        qDebug()<<"Cannot load font";
+        qWarning()<<"Cannot load font";
         return false;
     }
 
